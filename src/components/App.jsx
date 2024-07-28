@@ -1,13 +1,19 @@
-import { useState } from 'react';
-import './App.css';
+import { forwardRef, useRef, useEffect } from "react";
+import ComponentA from "./ComponentA";
+import ComponentB from "./ComponentB";
+
 
 const App = () => {
+  
 
   return (
-    <div>
-      <p>Hello</p>
-    </div>
+    <>
+      <ComponentA />
+      <ComponentB />
+    </>
   );
 };
+
+
 
 export default App
